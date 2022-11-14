@@ -1,10 +1,13 @@
 ﻿#include "Base.hpp"
 #include "Title.hpp"
+#include "Games/BinarySearch.hpp"
 
 void Main()
 {
 	App manager;
+
 	manager.add<Title>(-1);
+	manager.add<BinarySearch>(0);
 
 	while (System::Update()) {	
 		manager.update();
